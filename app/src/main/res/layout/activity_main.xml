@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/txtnum1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblname"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:hint="Digite un numero"/>
+
+    <EditText
+        android:id="@+id/txtnum2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnum1"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:hint="Digite un numero"/>
+
+    <TextView
+        android:id="@+id/lblrespuesta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnum2"
+        android:layout_marginTop="30dp"
+        android:text="Respuesta:"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/lblindi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnraiz3"
+        android:layout_marginTop="30dp"
+        android:text="Seleccione la operacion que desea realizar"/>
+
+    <Button
+        android:id="@+id/btnsuma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblrespuesta"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="300dp"
+        android:text="+"/>
+
+    <Button
+        android:id="@+id/btnresta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnsuma"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="300dp"
+        android:text="-"/>
+
+    <Button
+        android:id="@+id/btnmulti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnresta"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="300dp"
+        android:text="*"/>
+
+    <Button
+        android:id="@+id/btndivi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnmulti"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="300dp"
+        android:text="/"/>
+
+    <Button
+        android:id="@+id/btnfact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblrespuesta"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:text="!"/>
+
+    <Button
+        android:id="@+id/btnporcen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnfact"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="172dp"
+        android:text="%"/>
+
+    <Button
+        android:id="@+id/btnexpo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnporcen"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="172dp"
+        android:text="^" />
+
+    <Button
+        android:id="@+id/btnra2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnporcen"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="172dp"
+        android:text="√"/>
+
+    <Button
+        android:id="@+id/btnraiz3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnra2"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="172dp"
+        android:text="3√" />
+
+    <Button
+        android:id="@+id/btnraizn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblrespuesta"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="275dp"
+        android:layout_marginRight="50dp"
+        android:text="n√"/>
+
+    <Button
+        android:id="@+id/btnmod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnraizn"
+        android:layout_marginLeft="275dp"
+        android:layout_marginTop="5dp"
+        android:text="%mod"/>
+
+    <Button
+        android:id="@+id/btnmaymen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnmod"
+        android:layout_marginLeft="275dp"
+        android:layout_marginTop="5dp"
+        android:text="mayor"/>
+
+
+
+</RelativeLayout>
